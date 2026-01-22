@@ -9,24 +9,21 @@ This project is taked with development of a model for age prediction to be used 
 
 ## Data
 
-Features available in our data consist of:
+Files and data used for this project:
 
+Files containing 7.6k images.
 
-**Train data split ratio:** 3:1:1
+Dataset matching images to **real age** of person decpicted.
 
-**Models evaluated:** DecisionTreeClassifier, RandomForestClassifier, LogisticRegression
+**Models evaluated:** ResNet50
 
 ## Findings
 
-Results on both validation and test sets demonstrate both decision tree and random forest algorithms to produce the highest accuracy score, thus being more likely to effectively classify client data into a service plan to recomend.
-
-| Model | Accuracy|
-| --- | --- |
-| Decision Tree | 0.78 |
-| Random Forest | 0.78 |
+Training shows a functioning model to predict age groups that can be used for age verification in store purchases. The model however requires modifications for improvment as lowest obtained MAE sits at 3 for training set and 7 for validation set. 
+This task in particular is better framed around the legal age for alcohol purchase 18+/21+ instead of trying to find a global minimum. 
 
 ## Software
 
 **Tools:** _python_, _jupyter_
 
-**Libraries:** _pandas_, _sklearn_
+**Libraries:** _pandas_, _sklearn_, _NumPy_, _PIL_, _TensorFlow_
